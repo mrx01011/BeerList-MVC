@@ -64,11 +64,12 @@ final class SearchBeerViewController: UIViewController {
 // MARK: UISearchResultsUpdating
 extension SearchBeerViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        if searchController.searchBar.text != "" {
+        if let text = Int(searchController.searchBar.text ?? "") {
             self.activityIndicator.startAnimating()
-            networkingApi.searchBeer(id: Int(searchController.searchBar.text!)!, completion: { [weak self] beers in
-                guard let self else { return }
-                self.beerView.setupView(model: beers.first!)
+            networkingApi.searchBeer(id: text, completion: { [weak self] beers in
+                guard let self,
+                      let beer = beers.first else { return }
+                self.beerView.setupView(model: beer)
             })
             self.activityIndicator.stopAnimating()
         }
