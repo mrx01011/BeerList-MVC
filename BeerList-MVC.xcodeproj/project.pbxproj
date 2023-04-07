@@ -21,6 +21,7 @@
 		FB32B51029DF5FD600257867 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB32B50F29DF5FD600257867 /* TabBarController.swift */; };
 		FB32B51229DF615300257867 /* RandomBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB32B51129DF615300257867 /* RandomBeerViewController.swift */; };
 		FB32B51429DF62B000257867 /* SearchBeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB32B51329DF62B000257867 /* SearchBeerViewController.swift */; };
+		FBD6B63D29E0ADBC00C4512F /* screenshots in Resources */ = {isa = PBXBuildFile; fileRef = FBD6B63C29E0ADBC00C4512F /* screenshots */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FB32B50F29DF5FD600257867 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FB32B51129DF615300257867 /* RandomBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBeerViewController.swift; sourceTree = "<group>"; };
 		FB32B51329DF62B000257867 /* SearchBeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBeerViewController.swift; sourceTree = "<group>"; };
+		FBD6B63C29E0ADBC00C4512F /* screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = screenshots; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		FB32B4DF29DF486300257867 = {
 			isa = PBXGroup;
 			children = (
+				FBD6B63C29E0ADBC00C4512F /* screenshots */,
 				FB32B4EA29DF486300257867 /* BeerList-MVC */,
 				FB32B4E929DF486300257867 /* Products */,
 				1B514E979FDD8FE7267F3E0A /* Pods */,
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB32B4F829DF486700257867 /* LaunchScreen.storyboard in Resources */,
+				FBD6B63D29E0ADBC00C4512F /* screenshots in Resources */,
 				FB32B4F529DF486700257867 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
