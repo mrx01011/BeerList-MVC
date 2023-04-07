@@ -61,7 +61,7 @@ final class SearchBeerViewController: UIViewController {
         }
     }
 }
-// MARK: UISearchResultsUpdating
+// MARK: - UISearchResultsUpdating
 extension SearchBeerViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         if let text = Int(searchController.searchBar.text ?? "") {
